@@ -9,8 +9,8 @@ Route::get('/', function () {
 
 Route::get('/Index', [CitaController::class, 'index'])->name('Index');
 
-// Mostrar formulario
+// Mostrar 
 Route::get('/citas', [CitaController::class, 'create'])->name('citas.create');
 
-// Guardar formulario
+// Guardar
 Route::post('/citas', [CitaController::class, 'store'])->name('citas.store');
